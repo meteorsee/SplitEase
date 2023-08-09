@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EqualBreakdown"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/title_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/lobster_regular"
+        android:text="Equal Breakdown"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Total Bill:"
+        android:layout_below="@id/title_amount"
+        android:fontFamily="@font/lobster_regular"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalBill"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lobster_regular"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvNumberOfPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTotalBill"
+        android:layout_marginBottom="8dp"
+        android:text="Number of People:"
+        android:fontFamily="@font/lobster_regular"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etNumberOfPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNumberOfPeople"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lobster_regular"
+        android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnEqualBreakdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etNumberOfPeople"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_button_equal"
+            android:fontFamily="@font/open_sans_regular"
+            android:letterSpacing="0.2"
+            android:textColor="#ffffff"
+            android:text="Calcualte" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/btnEqualBreakdown">
+
+            <TextView
+                android:id="@+id/tvBreakdownResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="18sp"
+                android:letterSpacing="0.1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
